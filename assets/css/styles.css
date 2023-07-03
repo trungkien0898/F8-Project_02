@@ -264,14 +264,26 @@ body {
 }
 
 .courses .list_courses {
-    margin-top: 55px;
     display: flex;
+    margin-top: 55px;
     gap: 30px;
 }
 
+.courses .list_courses .course:not(.course:first-child) {
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #e2dfda;
+}
+
 .courses .list_courses .infor_course {
-    margin-top: 16px;
+    margin: 16px 22px 22px 22px;
     margin-left: 22px;
+}
+
+.courses .list_courses .first {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
 .courses .list_courses .theme {
@@ -337,4 +349,138 @@ body {
 .courses .list_courses .btn_buy1 {
     border-radius: 25px;
     background: #171100;
+}
+
+/* ================= Testimonial ================= */
+.testimonial {
+    background: #2e2100;
+}
+
+.testimonial .content {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial .information .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.testimonial .information .his_name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-size: 2.4rem;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.testimonial .information .his_job {
+    margin-top: 4px;
+    margin-bottom: 28px;
+    width: 159px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.testimonial .he_said {
+    position: relative;
+    margin-left: 271px;
+}
+
+.testimonial .he_said .text {
+    color: #fff;
+    width: 740px;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+}
+.testimonial .he_said img {
+    position: absolute;
+    top: -29px;
+    left: -31px;
+}
+
+/* ================= Feature ================= */
+.feature {
+    margin-top: 200px;
+}
+
+.feature .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .content .desc_text {
+    width: 470px;
+}
+
+.feature .desc_img {
+    width: 570px;
+    height: 438px;
+    position: relative;
+}
+
+.desc_img .theme {
+    position: absolute;
+    width: 270px;
+    height: 405px;
+    border-radius: 16px;
+}
+
+.desc_img .theme1 {
+    bottom: 0;
+    left: 0;
+}
+.desc_img .theme2 {
+    top: 0;
+    right: 0;
+}
+
+.desc_text {
+    padding-top: 58px;
+}
+
+.desc_text .subtitle {
+    color: #171100;
+    font-size: 3.8rem;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.76px;
+}
+
+.desc_text .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.desc_text .lesson {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.desc_text .sing_up {
+    margin-top: 32px;
+    display: inline-block;
+    color: #fff;
+    background: #ffb900;
+    border-radius: 26px;
+    padding: 11px 37px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px;
 }

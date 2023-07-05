@@ -14,6 +14,7 @@ a {
 html {
     font-size: 62.5%;
     height: 10000px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -648,9 +649,10 @@ body {
     background: #2e2100;
 }
 
-.footer .content {
+.footer .content .list_column {
     display: flex;
-    padding: 96px 0 28px;
+    gap: 130px;
+    padding: 96px 0 38px;
 }
 
 .footer .content .title {
@@ -660,35 +662,35 @@ body {
     line-height: 28px;
 }
 
-.footer .column .desc {
+.footer .column1 .desc {
     color: #bfbcb2;
-    width: 267px;
-    margin: 18px 145px 18px 0;
+    margin: 18px 0 18px 0;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 26px;
 }
 
-.footer .column .line {
+.footer .list_column .line {
     margin: 14px 0 28px 0;
     width: 130px;
     height: 1px;
     background: #59554b;
 }
 
-.footer p {
+.footer .list_column p {
     color: #bfbcb2;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 26px;
 }
 
-.footer p ~ p {
+.footer .list_column p ~ p {
     margin-top: 12px;
 }
 
-.footer .column ~ .column {
-    margin-right: 132px;
+.footer .column1 {
+    margin-right: 15px;
+    width: 267px;
 }
 
 .footer .column3 {
@@ -697,4 +699,44 @@ body {
 
 .footer .column4 {
     width: 231px;
+}
+
+.footer .column4 strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.footer .line_full_content {
+    width: 1170px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer .content .source {
+    color: #807d74;
+    text-align: center;
+    padding: 28px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer .column1 .logo {
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.footer .column1 .logo::after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 5px;
+    margin-left: 3px;
+    background: #ffb900;
 }

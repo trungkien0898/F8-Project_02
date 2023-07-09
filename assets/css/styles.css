@@ -31,16 +31,20 @@ body {
 /* ================= Navbar ================= */
 .navbar {
     background: #fffcf4;
+}
+
+.fixed {
     position: sticky;
-    top: 0;
+    top: -28px;
     z-index: 1;
 }
 
 .navbar .content {
     display: flex;
+    max-width: calc(100% - 48px);
     justify-content: space-between;
     align-items: center;
-    padding: 36px 0 20px 0;
+    padding: 36px 0 8px 0;
 }
 
 .navbar .cta_section {
@@ -50,10 +54,17 @@ body {
 
 .navbar .list_sections {
     display: flex;
-    gap: 42px;
 }
 
-.navbar .list_sections li:first-child a {
+.navbar .list_sections a {
+    color: #5f5b53;
+    padding: 0 21px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.navbar .list_sections .active {
     position: relative;
     color: #171100;
     font-size: 1.6rem;
@@ -61,7 +72,7 @@ body {
     line-height: 28px;
 }
 
-.navbar .list_sections li:first-child a::before {
+.navbar .list_sections .active::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -70,14 +81,7 @@ body {
     border-radius: 1px;
     background: #171100;
     bottom: -1px;
-    left: 1px;
-}
-
-.navbar .list_sections li:not(li:first-child) a {
-    color: #5f5b53;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 28px;
+    left: 21px;
 }
 
 .navbar .cta_section .sign_up {
@@ -85,7 +89,7 @@ body {
     background: #171100;
     color: #fff;
     border-radius: 24.5px;
-    margin-left: 70px;
+    margin-left: 49px;
     padding: 11px 41px;
     font-size: 1.6rem;
     font-weight: 600;
@@ -95,7 +99,7 @@ body {
 /* ================= Hero ================= */
 .hero {
     background: #fffcf4;
-    padding-top: 44px;
+    padding-top: 56px;
     padding-bottom: 65px;
 }
 
